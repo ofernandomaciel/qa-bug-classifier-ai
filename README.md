@@ -32,30 +32,49 @@ mascaramento conforme requisitos de PCI DSS.
 
 ## 🛠️ Tecnologias
 
+**Backend:**
 - Python 3.13
+- Flask
+- Flask-CORS
 - Google Gemini 2.5 Flash API
 - google-genai
+
+**Frontend:**
+- React
+- Vite
 
 ---
 
 ## 🚀 Como rodar localmente
 
+### Backend
 ```bash
-# Clone o repositório
-git clone https://github.com/ofernandomaciel/qa-bug-classifier-ai.git
-
-# Entre na pasta
+# Entre na pasta do projeto
 cd qa-bug-classifier-ai
 
-# Instale as dependências
+# Instale as dependências Python
 pip install -r requirements.txt
 
 # Configure sua chave da API do Gemini
 export GOOGLE_API_KEY="sua-chave-aqui"
 
-# Rode o classificador
-python src/classifier.py
+# Rode o backend
+python src/app.py
 ```
+
+### Frontend
+```bash
+# Entre na pasta do frontend
+cd frontend
+
+# Instale as dependências
+npm install
+
+# Rode o frontend
+npm run dev
+```
+
+Acesse **http://localhost:5173** no navegador.
 
 ---
 
